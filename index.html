@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>404 not found challange</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			display: flex;
+			justify-content: space-around;
+		}
+		.container img{
+			width: 500px;
+		}
+		.text{
+			width: 500px;
+		}
+		.text h1{
+			font-size: 55px;
+			margin-bottom: 30px;
+		}
+		.text p{
+			margin-bottom: 30px;
+			font-size: 22px;
+			width: 280px;
+			line-height: 30px;
+		}
+		.text button{
+			padding: 20px 30px;
+			background: black;
+			color: #fff;
+		}
+		@media screen and (max-width: 576px) {
+			.container{
+				flex-direction: column;
+				padding: 20px;
+			}
+			.text , .text p, .container img{
+				width: auto;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="images/scarecrow.png" alt="">
+		<div class="text">
+			<h1>I have a bad news for you</h1>
+			<p>The page you are looking for might be removed or is temporarily unavailable</p>
+			<button>Back to HomePage</button>
+		</div>
+	</div>
+</body>
+</html>
